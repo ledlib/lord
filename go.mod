@@ -1,4 +1,4 @@
-module lord
+module github.com/ledlib/lord
 
 go 1.17
 
