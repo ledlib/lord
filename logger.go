@@ -46,13 +46,13 @@ type Logger interface {
 
 // Configuration ...
 type Configuration struct {
-	EnableConsole     bool
-	ConsoleJSONFormat bool
-	ConsoleLevel      string
-	EnableFile        bool
-	FileJSONFormat    bool
-	FileLevel         string
-	FileLocation      string
+	EnableConsole     bool   `mapstructure:"enableConsole"`
+	ConsoleJSONFormat bool   `mapstructure:"consoleJsonFormat"`
+	ConsoleLevel      string `mapstructure:"consoleLevel"`
+	EnableFile        bool   `mapstructure:"enableFile"`
+	FileJSONFormat    bool   `mapstructure:"fileJsonFormat"`
+	FileLevel         string `mapstructure:"fileLevel"`
+	FileLocation      string `mapstructure:"FileLocation"`
 }
 
 //NewLogger returns an instance of logger
