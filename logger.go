@@ -52,7 +52,7 @@ type Configuration struct {
 	EnableFile        bool   `mapstructure:"enableFile"`
 	FileJSONFormat    bool   `mapstructure:"fileJsonFormat"`
 	FileLevel         string `mapstructure:"fileLevel"`
-	FileLocation      string `mapstructure:"FileLocation"`
+	FileLocation      string `mapstructure:"fileLocation"`
 }
 
 //NewLogger returns an instance of logger
